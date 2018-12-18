@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar</title>
+
+    <!-- This is required for most non-English locales! -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<link href="lib/ext-theme-classic-all.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Sets up all Ext and Extensible includes: -->
+	<script type="text/javascript" src="lib/ext-all-debug.js"></script>
+    <script type="text/javascript" src="lib/Extensible-config.js"></script> 
+	
+	
+    
+    <!-- Page-specific includes -->
+    <script type="text/javascript" src="basic.js"></script>
+    <style type="text/css">
+ 		#panel, #simple { position: absolute; } 
+   		#panel, #simple { overflow: auto; padding: 1px; }
+
+		   #panel { 
+		    width: 325px; background: #ECF5E4; border-left: 1px solid #231F20;
+		    top: 0px; /* Расстояние от верхнего края */
+		    right: 0px; 
+		    bottom: 0; /* Расстояние снизу  */
+		   }
+		   #simple {
+		    top: 0px; /* Расстояние от верхнего края */
+		    left: 0px; /* Расстояние от левого края */ 
+		    bottom: 0; right: 325px;
+		   }
+    </style>
+</head>
+<body>
+
+
+    <div id="simple" class="sample-ct"></div>
+
+    <div id="panel" class="sample-ct"> <!-- <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form> --></div>
+   
+</body>
+</html>
